@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+
+    <title>Forms</title>
+</head>
+
+<body>
+
+
+    <form action="php" method="post" name="sign up page" id="form1" class="border-style basic-style shadow-style">
+        <header>
+
+            <div class="sign">
+                <h3>Sign up</h3>
+            </div>
+        </header>
+        <main>
+
+            <div class="basic info">
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name." required autofocus placeholder="First name">
+                <div>
+                    <label for="Last Name">Last Name:</label>
+                    <input type="text" name="last name" id="name.1" required placeholder="last name">
+                </div>
+                <div>
+                    <label for="Gaurdian Name">Gaurdian name:</label>
+                    <input type="text" name="gurdian name" required placeholder="Gaurdian name">
+                </div>
+                <div>
+                    <label for="date of birth">Date Of Birth:</label>
+                    <input type="date" name="dob" id="dob." required min="1950-05-11" max="2005-06-12">
+                </div>
+
+                <div>
+                    <label for="male">male</label>
+                    <input type="radio" name="mal" id="ma" value="male">
+                    <label for="female">female</label>
+                    <input type="radio" name="mal" id="fe" value="female">
+                </div>
+
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" list="your country" placeholder="your country" required>
+                    <datalist id="your country">
+                        <option>india</option>
+                        <option>pakistan</option>
+                        <option>afganistan</option>
+
+                        <option>kazakistan</option>
+
+                        <option>iran</option>
+                        <option>iraq</option>
+
+                        <option>duabai</option>
+                        <option>usa</option>
+                        <option>uk</option>
+                        <option>greec</option>
+                        <option>russia</option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="email">Enter Email:</label>
+                    <input type="email" name="mail" id="mail." placeholder="enter your mail" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone no:</label>
+                    <input type="tel" required placeholder="enter phone no" name="phone " id="phone"
+                        pattern="\+91[0-9]{10}">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="create password" name="password" id="password." required
+                        pattern="(?=.\*[A-Z])(?=.\*[0-9])[a-zA-Z0-9]{4,10}">
+                </div>
+
+                <div class="check">
+                    <input type="checkbox">
+                    <label for="checkbox">I agrre terms and conditions</label>
+                </div>
+
+                <div>
+                    <input type="file" accept="jpg,png,pdf">
+                </div>
+
+
+
+
+        </main>
+
+        <footer>
+
+            <input type="submit">
+            <button>cancel</button>
+        </footer>
+
+ 
+
+
+    </form>
+
+</body>
+
+</html>
